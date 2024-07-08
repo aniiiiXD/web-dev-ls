@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; 
 }
 
 #landing-screen {
@@ -44,7 +44,7 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    position: relative; /* Ensure the header is above the video */
+    position: relative;
     z-index: 1;
 }
 
@@ -104,8 +104,8 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Ensure video is behind other elements */
-    opacity: 1; /* Adjust the opacity for the faded effect */
+    z-index: -1;
+    opacity: 1; 
 }
 
 .container {
@@ -114,7 +114,7 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-/* Content box styles */
+=
 .content-box {
     position: relative;
     width: 800px;
@@ -122,25 +122,25 @@ nav ul li a:hover {
     margin: auto;
     background-color: rgba(229, 240, 227, 0.9);
     padding: 20px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: transform 0.3s; /* Smooth hover effect */
+    transition: transform 0.3s; 
   }
   
   .content-box:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
   }
   
-  /* Navigation buttons */
+
   .nav-btn {
     background-color: #444;
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
     cursor: pointer;
     transition: background-color 0.3s;
   }
@@ -149,16 +149,16 @@ nav ul li a:hover {
     background-color: #555;
   }
   
-  /* Content text */
+ 
   .content {
     flex: 1;
-    text-align: left; /* Left-aligned text */
-    font-size: 1.5em; /* Larger font size */
-    line-height: 1.5; /* Adjust line spacing for readability */
+    text-align: left; 
+    font-size: 1.5em; 
+    line-height: 1.5; 
   }
   
   .content-para {
-    font-size: 1.5em; /* Larger font size */
-    line-height: 1.5; /* Adjust line spacing for readability */
+    font-size: 1.5em;
+    line-height: 1.5; 
   }
   
