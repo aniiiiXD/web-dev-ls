@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../public/icons8-valorant-48.png">
+    <title>Valorant</title>
+</head>
+<body>
+    
+    <div id="landing-screen">
+        <img src="../public/Valorant_logo_-_pink_color_version.svg" alt="Valorant Logo" id="logo">
+        <button id="get-started" onclick="scrollToContent()">Get Started</button>
+    </div>
+
+    <header class="header" id="main-header">
+       
+        <nav class="bottom-navbar">   
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/history.html">History</a></li>
+                <li><a href="../html/progress.html">Quiz</a></li>
+                <li><a href="../html/competitions.html">Competitions</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <div id="video-section">
+        <video autoplay muted loop id="bg-video">
+            <source src="../public/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="container" id="intro">
+        <div class="content-box">
+            <button class="nav-btn left-btn" onclick="prevContent()">&#9664;</button>
+            <div class="content">
+                <p class="content-para">This is the genre of FPS games and in this fast-paced world, this has emerged as one of the most fun to play.</p>
+            </div>
+            <button class="nav-btn right-btn" onclick="nextContent()">&#9654;</button>
+        </div>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

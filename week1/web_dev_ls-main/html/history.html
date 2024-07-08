@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valo-history</title>
+    <link rel="icon" type="image/x-icon" href="icons8-valorant-48.png">
+    <link rel="stylesheet" href="../css/history.css">
+</head>
+<body>
+    <header class="header" id="main-header">
+        <nav class="bottom-navbar">   
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/history.html">History</a></li>
+                <li><a href="../html/progress.html">Quiz</a></li>
+                <li><a href="../html/competitions.html">Competitions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="mainbox">
+        <div class="info-box">
+            <h1>Valorant History</h1>
+            <p>The History of FPS video games...</p>
+            
+            <div class="content">
+                <p></p>
+            </div>
+        </div>
+        <div class="navigation">
+            <button onclick="prevContent()">Previous</button>
+            <button onclick="nextContent()">Next</button>
+        </div>
+    </div>
+    <script>
+        let contentIndex = 0;
+        const contentArray = [
+            "The History of FPS video games goes way back, starting with the famous 'COUNTER STRIKE' series, which popularized the multiplayer genre.",
+            "Development started in 2012 by RIOT GAMES, undergoing many changes. It was finally released in beta under the name 'PROJECT A', and in 2020 it was officially released as 'VALORANT'.",
+            "It gained popularity very quickly, attracting players from different games like CS2, Overwatch, and Fortnite.",
+            "Currently, it has a huge player base for both casual and competitive playstyles."
+        ];
+
+        function showContent(index) {
+            const contentDiv = document.querySelector('.content p');
+            contentDiv.textContent = contentArray[index];
+        }
+
+        function prevContent() {
+            contentIndex = (contentIndex - 1 + contentArray.length) % contentArray.length;
+            showContent(contentIndex);
+        }
+
+        function nextContent() {
+            contentIndex = (contentIndex + 1) % contentArray.length;
+            showContent(contentIndex);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showContent(contentIndex);
+        });
+
+    </script>
+</body>
+</html>
