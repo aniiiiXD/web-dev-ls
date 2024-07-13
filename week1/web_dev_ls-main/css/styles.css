@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+#landing-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://cdn2.unrealengine.com/everything-you-need-to-know-about-valorant-s-sniper-shotgun-the-outlaw-1920x1080-a516312d02f5.png") no-repeat center center/cover; 
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#get-started {
+    background-color: #fff;
+    color: #060606;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#get-started:hover {
+    background-color: #ded2d7;
+    transform: scale(1.3);
+    border-color: black;
+    border-width: 10px;
+}
+
+.header {
+    background-color: #966de0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Ensure the header is above the video */
+    z-index: 1;
+}
+
+#top {
+    font-size: 70px;
+    margin: 10px;
+}
+
+.bottom-navbar {
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #2d274f;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+    flex: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}
+
+#video-section {
+    height: 100vh;
+    position: relative;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure video is behind other elements */
+    opacity: 1; /* Adjust the opacity for the faded effect */
+}
+
+.container {
+    padding: 20px;
+    position: relative; 
+    z-index: 1;
+}
+
+/* Content box styles */
+.content-box {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    background-color: rgba(229, 240, 227, 0.9);
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s; /* Smooth hover effect */
+  }
+  
+  .content-box:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Navigation buttons */
+  .nav-btn {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-btn:hover {
+    background-color: #555;
+  }
+  
+  /* Content text */
+  .content {
+    flex: 1;
+    text-align: left; /* Left-aligned text */
+    font-size: 1.5em; /* Larger font size */
+    line-height: 1.5; /* Adjust line spacing for readability */
+  }
+  
+  .content-para {
+    font-size: 1.5em; /* Larger font size */
+    line-height: 1.5; /* Adjust line spacing for readability */
+  }
+  
